@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  overflow: hidden;
+}
+
+
+.pencil {
+  position: absolute;
+  width: 20px;
+  height: 60px;
+  background-color: yellow;
+  transform: rotate(45deg); /* Rotates the pencil for a diagonal look */
+  pointer-events: none;
+  cursor: pointer;
+}
+
+
+.lead {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 10px solid black;
+}
+
+   
+canvas {
+  border: 1px solid #ccc;
+  background-color: white;
+  cursor: crosshair;
+}
